@@ -11,6 +11,7 @@ const Emailform = () => {
       >
         <input name="form-name" type="hidden" value="contact" />
         <input type="text" name="name" />
+        <input type="text" name="email" />
         <button>Send</button>
       </form>
     </div>
