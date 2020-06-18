@@ -9,7 +9,8 @@ const Emailform = () => {
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
-        <input name="name" placeholder="Your Name" type="text" />
+        <input name="contact" type="hidden" value="contact" />
+        <input type="text" name="name" />
         <button>Send</button>
       </form>
     </div>
