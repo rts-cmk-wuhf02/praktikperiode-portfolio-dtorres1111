@@ -11,10 +11,13 @@ const Emailform = () => {
         data-netlify-honeypot="bot-field"
       >
         <input name="form-name" type="hidden" value="contact" />
-        <label htmlFor="name">Full Name</label>
-        <input type="text" name="name" />
-        <label htmlFor="email">Enter Your Email Here..</label>
-        <input type="text" name="email" />
+        <label htmlFor="name">Name</label>
+        <input type="text" name="name" placeholder="Enter Your Name" />
+        <label htmlFor="email">Email</label>
+        <input type="text" name="email" placeholder="Enter Your Email" />
+        <label htmlFor="message">Message</label>
+        <input type="text" name="message" placeholder="Write a Message" />
+        <label htmlFor="submit">Submit</label>
         <button>Send Email</button>
       </form>
     </StyledEmailform>
@@ -24,32 +27,37 @@ const Emailform = () => {
 export default Emailform
 
 const StyledEmailform = styled.section`
-  width: 350px;
-  height: 350px;
-  border-radius: 20px;
-  background-color: coral;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  background-color: cadetblue;
 
   input {
-    border-radius: 20px;
+    text-align: center;
+    border-radius: 5px;
     border: none;
+    width: 200px;
+    height: 50px;
   }
 
   label {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bangers", cursive;
+    color: white;
   }
 
   button {
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
+    height: 50px;
+    border-radius: 5px;
     border: none;
-    width: 100px;
-    background-color: greenyellow;
-    color: black;
+    width: 200px;
+    background-color: burlywood;
+    color: white;
   }
 `
